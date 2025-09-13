@@ -1,60 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENAIFLIX - FILMES e SERIES</title>
-<link rel="stylesheet" href="home.css">
-<link rel="stylesheet" href="../assets/styles/global.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../assets/styles/global.css">
 </head>
+
 <body>
-<header class="cabecalho">
- <a href="index.html"> SENAIFLIX</a>
- <img id="Menu-btn" class="hamburger-menu" src="../assets/icons/material-symbols_menu (1).png" alt="">
-<nav>
-    <a href="#">Inicio</a>
-    <a href="#Titulo-filmes">Filmes</a>
-     <a href="#Titulo-series">Series</a>
-     </nav>
-<nav class="Menu-mobile" id="Menu-mobile">
-    <a href="#">Inicio</a>
-    <a href="#Titulo-filmes">Filmes</a>
-     <a href="#Titulo-series">Series</a>
-</nav>
-</header>
-<main> 
-    <section class="Banner">
-        <div class="Div-banner"> 
-            <h2>Assistir Agora!</h2>
-            <p>Ao saber que tenho cancer, um professor passa a fabricar...</p>
+    <header class="cabecalho">
+        <a href="index.html"> SENAIFLIX</a>
+        <img id="Menu-btn" class="hamburger-menu" src="../assets/icons/material-symbols_menu (1).png" alt="">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#Titulo-filmes">Filmes</a>
+            <a href="#Titulo-series">Series</a>
+        </nav>
+        <nav class="Menu-mobile" id="Menu-mobile">
+            <a href="#">Inicio</a>
+            <a href="#Titulo-filmes">Filmes</a>
+            <a href="#Titulo-series">Series</a>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="div-banner">
+                <h2>Assistir Agora!</h2>
+                <p>Ao saber que tenho cancer, um professor passa a fabricar...</p>
+
+            </div>
+        </section>
+        <div class="inputs">
+            <div class="pesquisa">
+                <label for="pesquisar">Pesquise por filmes e/ou series:</label>
+                <input type="text" placeholder="Insira um Titulo" id="pesquisar">
+            </div>
+        <div class="filtro">
+            <label for="genero">Filtrar por genero</label>
+            <select name="genero" id="genero">
+                <option selected value="">Selecione um genero:</option>
+                <option value="Anime">Anime</option>
+                <option value="Terror">Terror</option>
+                <option value="Acao">Acao</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Horror">Horror</option>
+                <option value="Comedia">Comedia</option>
+                <option value="Misterio">Misterio</option>
+                <option value="Crime">Crime</option>
+                <option value="Suspense">Suspense</option>
+                <option value="Fantasia">Fantasia</option>
+                <option value="Documetario">Documentario</option>
+                <option value="Desenhos">Desenhos</option>
+            </select>
+            <button id="limpar-filtro" class="limpar-filtros">Limpar Filtros</button>
+        </div>
+        </div>
+        <section class="Filmes - series">
+            <h2 class=" Titulo - Filmes">Filmes</h2>
+            <div id="Filmes-container" class="card-container">
+                <a href="..//detalhes-do-filme/" class="card"></a>
+                <a href="..//detalhes-do-filme/" class="card"></a>
+                <a href="..//detalhes-do-filme/" class="card"></a>
+                <a href="..//detalhes-do-filme/" class="card"></a>
+                <a href="..//detalhes-do-filme/" class="card"></a>
+                <a href="..//detalhes-do-filme/" class="card"></a>
+                </div>
+        </section>
+        <section class="Filmes - series">
+            <h2 class=" Titulo - series">Series</h2>
+            <div id="Series-container" class="card-container">
+                <a href="..//detalhes-do-filme/" class="card"></a>
+                <a href="..//detalhes-do-filme/" class="card"></a>
+                <a href="..//detalhes-do-filme/" class="card"></a>
+                <a href="..//detalhes-do-filme/" class="card"></a>
+                <a href="..//detalhes-do-filme/" class="card"></a>
+                <a href="..//detalhes-do-filme/" class="card"></a>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <p>Nos sigam nas redes sociais</p>
+        <div class="imgs">
+            <img src="../assets/imgs/mdi_twitter.svg" alt="">
+            <img src="../assets/imgs/ri_instagram-fill.svg" alt="">
+            <img src="../assets/imgs/mdi_youtube.svg" alt="">
+
 
         </div>
-    </section>
-    <div class="inputs">
-        <div class="pesquisa">
-            <label for="pesquisar">Pesquise por filmes e/ou series:</label>
-            <input type="text" placeholder="Insira um Titulo" id="Pesquisa">
-         </div>
-
-    </div>
-    <div class="Filtros">
-        <label for="genero">Filtrar por genero</label>
-        <select name="genero" id="genero">
-            <option selected value="">Selecione um genero:</option>
-            <option value="Anime">Anime</option>
-            <option value="Terror">Terror</option>
-            <option value="Acao">Acao</option>
-            <option value="Aventura">Aventura</option>
-            <option value="Horror">Horror</option>
-            <option value="Comedia">Comedia</option>
-            <option value="Misterio">Misterio</option>
-            <option value="Crime">Crime</option>
-            <option value="Suspense">Suspense</option>
-            <option value="Fantasia">Fantasia</option>
-            <option value="Documetario">Documentario</option>
-            <option value="Desenhos">Desenhos</option>
-        </select>
-    </div>
-</main>
+    </footer>
 </body>
+<script src="../scripts/script.js"></script>
+
 </html>
